@@ -1,17 +1,22 @@
 # Raporti i studentit: UrbanBike AI
 
 Studenti:Kejsi Kapxhiu
-Grupi (nëse punohet në grup):
 Data:11.11.2026
-GitHub-i im:
+GitHub-i im:https://github.com/KC1103/urbanbike-ai-kejsi.git
 Figma:https://www.figma.com/design/uiUliUU5rnkjEPty2X0P3d/UrbanBike-AI-Kejsi-Kapxhiu?node-id=0-1&t=oeisMh42x4N11HwG-1
 
 ## Qëllimi
 
 Problemi që zgjidhim:Sa qira biçikletash priten për ditën pasuese në Washington, D.C.?
 Target-i y:rentals.
-Predictorët X:
-Koha kur parashikojmë dhe çfarë informacioni është i njohur:
+Predictorët X:rentals_lag1: numri i bicikletave te marra me qira nje dite me pare.
+rentals_lag7: numri i qirave shtate dite me pare.
+rentals_mean7: mesatarja e qirave gjate shtate diteve te meparshme.
+temp_c_lag7: temperatura shtate dite me pare.
+rain_mm_lag7: reshjet shtate dite me pare.
+wind_ms_lag7: shpejtesia e eres shtate dite me pare.
+trend_days: numeruesi i diteve nga fillimi i periudhes.
+Koha kur parashikojmë dhe çfarë informacioni është i njohur:Modeli parashikon numrin e qirave per diten pasuese, duke perdorur te dhenat e njohura deri ne diten paraardhese. Per variablat meteorologjike perdoren te dhenat me vonese prej shtate ditesh.
 
 ## Pastrimi
 
